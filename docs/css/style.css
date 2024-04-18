@@ -4,12 +4,32 @@
     font-weight: 300;
     background-color:#102545;
     color: #fff;
-    padding: 0.75em;
+    /* padding: 0.75em; */
 }
 
 body {
     /* overflow: hidden; /* Hide scrollbars */ */
+    /* margin: 0.75em; */
+    /* padding: 0.75em; */
     overflow-y: scroll;
+    overflow-x: hidden;
+    margin:0;
+}
+
+.page-title {
+    font-size: 8rem;
+    text-align: center;
+    color: #blue;
+    background-color: #00000000;
+    position: relative;
+    top: 80%;
+}
+
+.page-front {
+    background-image: url('../img/city-background.png');
+    height: 40vh;
+    left:0;
+    width: 100%;
 }
 
 @keyframes header-button-anim {
@@ -26,16 +46,43 @@ body {
 header {
     position: sticky;
     top: 0;
+    left:0;
     display: flex;
     gap: 1.5rem;
+    z-index: 3;
+    width: 100%;
+    height: 4.1rem;
+    align-items: center;
     /* font-size: 1.25em; */
 }
-section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+section:first-child {
+    padding: 0;
 }
 
+section:nth-child(even) {
+    background-color:#16171B;
+}
+
+section:nth-child(even) > h1 {
+    background-color:#16171B;
+}
+
+section:nth-child(even) > q {
+    background-color:#16171B;
+}
+
+section:nth-child(even) > p {
+    background-color:#16171B;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    left:0;
+}
 
 .header-button {
     font-size: 1.25em;
@@ -47,6 +94,7 @@ section {
 .header-button:first-child {
     margin-right: auto;
 }
+
 .header-button:first-child:hover {
     font-size: 1.25em;
     padding: 0.75em;
@@ -63,9 +111,15 @@ section {
 }
 
 h1 {
+    padding: 0.75em;
     font-size: 3em;
 }
 
 q {
     text-align: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
