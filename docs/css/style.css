@@ -4,13 +4,9 @@
     font-weight: 300;
     background-color:#102545;
     color: #fff;
-    /* padding: 0.75em; */
 }
 
 body {
-    /* overflow: hidden; /* Hide scrollbars */ */
-    /* margin: 0.75em; */
-    /* padding: 0.75em; */
     overflow-y: scroll;
     overflow-x: hidden;
     margin:0;
@@ -23,13 +19,13 @@ body {
     background-color: #00000000;
     position: relative;
     top: 80%;
+    padding-left: 6%;
 }
 
 .page-front {
     background-image: url('../img/city-background.png');
     height: 40vh;
     left:0;
-    width: 100%;
     padding: 0.75em;
 }
 
@@ -51,9 +47,10 @@ header {
     display: flex;
     gap: 1.5rem;
     z-index: 3;
-    width: 100%;
     height: 4.1rem;
     align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
     /* font-size: 1.25em; */
 }
 section:first-child {
@@ -64,22 +61,20 @@ section:nth-child(even) {
     background-color:#16171B;
 }
 
-section:nth-child(even) > h1 {
+section:nth-child(even) > * {
     background-color:#16171B;
 }
 
-section:nth-child(even) > q {
-    background-color:#16171B;
-}
-
-section:nth-child(even) > p {
-    background-color:#16171B;
+.callout {
+    border: 1px solid white;
+    padding: 1em;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
 }
 
 section {
     min-height: 100vh;
-    width: 100%;
-    padding: 1em;
+    padding: 2.5em;
     display: flex;
     flex-direction: column;
     left:0;
@@ -87,7 +82,7 @@ section {
 
 .header-button {
     font-size: 1.25em;
-    padding: 0.75em;
+    padding: 0.25em;
     border: 3px solid #00000000;
     border-radius: 0px;
 }
@@ -98,7 +93,6 @@ section {
 
 .header-button:first-child:hover {
     font-size: 1.25em;
-    padding: 0.75em;
     border: 3px solid #00000000;
     border-radius: 0px;
     animation: none;
@@ -107,7 +101,6 @@ section {
 .header-button:hover {
     border-bottom: 3px solid #08C1FB;
     border-radius: 10px;
-    padding: 0.75em;
     animation: header-button-anim 0.25s ease-out;
 }
 
