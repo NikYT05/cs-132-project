@@ -21,6 +21,24 @@ body {
     top: 80%;
     padding-left: 6%;
 }
+.page-front-text {
+    margin-top: 5em;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+.pill {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
 
 .page-front {
     background-image: url('../img/city-background.png');
