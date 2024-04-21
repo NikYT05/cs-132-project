@@ -2,8 +2,8 @@
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-    background-color:#102545;
     color: #fff;
+    background-color:#102545;
 }
 
 body {
@@ -71,6 +71,7 @@ header {
     padding-right: 2em;
     /* font-size: 1.25em; */
 }
+
 section:first-child {
     padding: 0;
 }
@@ -80,6 +81,16 @@ section:nth-child(even) {
 }
 
 section:nth-child(even) > * {
+    background-color:#16171B;
+}
+section:nth-child(even) > * > * {
+    background-color:#16171B;
+}
+
+section:nth-child(even) > * > * > * {
+    background-color:#16171B;
+}
+section:nth-child(even) > * > * > * > * {
     background-color:#16171B;
 }
 
