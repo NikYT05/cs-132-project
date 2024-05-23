@@ -14,59 +14,59 @@
 <body>
   <script src="js/go-to-section.js"></script>
   <header>
-    <span class="header-button" onclick="scrollToSection('main')">GiniGussr</span>
+    <span class="header-button" onclick="scrollToSection('main')">Gapping the Bridge</span>
     <button class="header-button" onclick="scrollToSection('overview')">Overview</button>
     <button class="header-button" onclick="scrollToSection('methods')">Methods</button>
     <button class="header-button" onclick="scrollToSection('data-collection')">Data Collection</button>
+    <button class="header-button" onclick="scrollToSection('data-exploration')">Data Exploration</button>
     <button class="header-button" onclick="scrollToSection('results')">Results</button>
     <button class="header-button" onclick="scrollToSection('connect')">Connect</button>
   </header>
   <div class="content">
     <section id="main">
       <div class="page-front">
-        <span class="page-title">GiniGuessr</span>
+        <span class="page-title">Gapping the Bridge</span>
       </div>
       <div class="page-front-text">
-        According to a 2022 report, the Philippines has one of the highest income inequality rates in East Asia, with a
-        majority of lower income earners capturing only 14% of the national income and the top 1% contributing 17%.
+        "Manila has become the virtual political and economic capital of the Philippines,
+        and its interests often take precedence over those of the rest of the country." - Renato Constantino
+      </div>
+      <div class="page-front-text">
+        "Imperial Manila is not just a metaphor but a reality of unequal development
+        and resource distribution that has left many regions lagging behind." - Dr. Michael DiGregorio
       </div>
     </section>
 
     <section id="overview">
       <h1>Overview</h1>
       <p>
-        As social inequality continues to be a pressing issue globally, the Philippines faces its own challenges in
-        achieving social inclusion and reducing disparities in income distribution. In line with Sustainable Development
-        Goal 10 (SDG 10), which aims to reduce inequality within and among countries, our project investigates the
-        differences in income disparity between urban and rural areas in the Philippines by analyzing the Gini indices.
-      </p>
-      <p>
-        The Gini index is a summary measure of income inequality within a population. It is derived from the Lorenz
-        curve,
-        which is a graphical representation of income or wealth distribution.
+        The concept of Imperial Manila reflects the stark differences between the capital region and the rest of the Philippines.
+        This highlights the pressing issue of urban vs rural inequality. In line with Sustainable Development Goal 10 (SDG 10),
+        which aims to reduce inequality within and among countries, our project investigates the income disparity between urban and rural areas in the Philippines.
       </p>
       <h1>Objectives</h1>
       <ol>
-        <li> To investigate the differences in income disparity between urban and rural areas in the Philippines by
-          analyzing the Gini indices </li>
+        <li> To investigate the income disparity between urban and rural areas in the Philippines </li>
         <li> To investigate the trends/relationships between income inequality and economic stability </li>
       </ol>
       <h1>Research questions</h1>
       <div class="callout">
+
+        <!-- RQ#1 -->
         <div class="callout">
           <p>
-            Is there a significant difference in income inequality between urban and rural areas in the Philippines?
+            Is there a significant difference in average household income between urban and rural areas in the Philippines?
           </p>
         </div>
-
         <div class="callout">
           Null Hypothesis <br>
-          There is no significant difference in income inequality. <br>
+          There is a significant income disparity between urban and rural areas. <br>
           <br>
-
           Alternative Hypothesis <br>
-          There is a significant difference in income inequality.
+          There is no significant income disparity between urban and rural areas
         </div>
+
+        <!-- RQ#2 -->
         <div class="callout">
           Given the CPI, does it affect the income disparity between urban and rural areas.
         </div>
@@ -74,15 +74,14 @@
           Null Hypothesis <br>
           There is insignificant difference in income inequality.<br>
           <br>
-
           Alternative Hypothesis <br>
           There is a difference in income inequality given the CPI.
         </div>
         <div class="callout">
+
           Action plan
           <ol>
-            <li> To derive the Gini indices by computing for the Lorenz curve using data on population (number of
-              families) and income (average family income) </li>
+            <li> To compute for the average household income per area type </li>
             <li>
               To compute for the annual average CPIs of the 5 most common products in the country and to compare these
               with the annual Gini indices
@@ -95,62 +94,41 @@
       <h1>Data Collection</h1>
       <p>
         Our dataset can be viewed <a href="https://bit.ly/WFYAutumnDataset">here</a>.
-        The datasets were accessed through the CEIC Data Global Database.
+        The datasets were accessed through the CEIC Data Global Database and the Philippine Statistics Authority (PSA) Database.
         The table below outlines which datasets/variables will be used for each objective.
-      <table>
-        <tr>
-          <th>Objective</th>
-          <th>Dataset/variable</th>
-          <th>Soure</th>
-        </tr>
-        <tr>
-          <td rownspan="3">To investigate the differences in income disparity between urban and rural areas in the
-            Philippines by analyzing the Gini indices</td>
-          <td>No. of Families</td>
-          <td>Philippine Statistics Authority</td>
-        </tr>
-        <tr>
-          <td>Avg. Family Income</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>GINI Coefficient</td>
-          <td>World Bank Estimate</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td rownspan="3">To investigate the income disparity in urban and rural areas given the CPI dataset.</td>
-          <td>Consumer Price Index</td>
-          <td>World Bank</td>
-        </tr>
-        <tr>
-          <td>Consumer Price Index (AOMM)</td>
-          <td>Philippine Statistics Authority</td>
-        </tr>
-        <tr>
-          <td>Consumer Price Index (per item)</td>
-          <td>Philippine Statistics Authority</td>
-        </tr>
-      </table>
-      Given the CPI, does it affect the income disparity between urban and rural areas.
+      </p>
+      <p>
+        Given that the data was obtained from the Philippine Statistics Authority (PSA) rather than collected directly by our team,
+        it is important to acknowledge that the PSA has already safeguarded data quality through data cleaning, consistency checks, and error detection.
+      </p>
+      <p>
+        For RQ#1, we extracted data on urbanity and total household income from all editions of the Family Income and Expenditure Survey.
+      </p>
+      <p>
+        For RQ#2, ___.
       </p>
     </section>
 
+    <section id="data-exploration">
+      <h1>Data Exploration</h1>
+      <h2> Preprocessing </h2>
+      <p> Two databases were utilized as sources due to the need for comprehensive data coverage.
+        In instances where one dataset lacked certain variables or characteristics, we would refer to the other dataset to ensure completeness.
+        Furthermore, a cross-validation process was conducted, comparing and verifying the data from both sources to enhance data reliability and accuracy.
+      </p>
+      <p>
+        We compiled the datasets across all years into one sheet. We then sorted the data by urbanity and then by region.
+        Since we will be applying regression models, we need not care for handling outliers or carrying out standardization.
+        Additionally, outliers may reflect extreme wealth or poverty, which may be meaningful in understanding income inequality.
+        We then computed for the average household income per area type per year.
+      </p>
+      <h2> Visualization </h2>
+      <p> We created a line chart to visualize the difference in average household income between urban and rural areas. </p>
+      <h2> Testing </h2>
+    </section>
+    
     <section id="methods">
       <h1>Methods</h1>
-    </section>
-
-    <section id="data-collection">
-      <h1>Data Collection</h1>
-      You may access the Dataset here
-      <a href="https://bit.ly/WFYAutumnDataset">
-        Dataset Link
-      </a>
-
     </section>
 
     <section id="results">
