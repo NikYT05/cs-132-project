@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -32,7 +32,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	background-color: #102545;
 }
 
 ol, ul {
@@ -51,69 +50,6 @@ blockquote, q {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-.text-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.text-container {
-    display: flex;
-    border: 1px solid #ccc;
-    max-width: calc(100% - 10px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	border-radius: 15px;
-	background-color: #ffffff40;
-	margin: 2em;
-}
-
-.table-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.table-container {
-    display: flex;
-    max-width: calc(100% - 10px);
-	border-radius: 15px;
-	margin: 0 auto;
-	border: 1px solid #ccc;
-}
-
-.icon-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    flex-shrink: 0;
-	border-radius: 15px;
-	width: 150px;
-}
-
-.icon-cell img {
-    max-width: 80%;
-    max-height: 80%;
-}
-
-.text-cell {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.text-cell h4 {
-    margin-top: 0;
-}
-
-.text-cell p {
-    margin: 0;
-	text-align: left;
 }
 
 body {
@@ -164,8 +100,8 @@ input, select, textarea {
 
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
-		line-height: 1.2;
-		color: #fff;
+		line-height: 1.85em;
+		color: #888;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -175,25 +111,19 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #43B3E0;
-		text-decoration: underline;
 	}
 
 		a:hover {
-			color: #dc267f !important;
+			color: #43bff0 !important;
 		}
 
 		a img {
 			border: 0;
 		}
 
-	b {
+	b, strong {
 		font-weight: 600;
-	}
-
-	strong {
-		font-weight: 600;
-		color: #dc267f;
+		color: #08C1FB;
 	}
 
 	i, em {
@@ -219,6 +149,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		color: #3e3e3e;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -1610,7 +1541,7 @@ input, select, textarea {
 		form select:focus,
 		form textarea:focus {
 			background: #fafafa;
-			box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #648fff;
+			box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #43bff0;
 		}
 
 	form textarea {
@@ -1690,14 +1621,6 @@ input, select, textarea {
 
 /* Image */
 
-	.background-image {
-		width: 100vw;
-    	height: 100vh;
-    	background-size: cover;
-    	background-position: center;
-    	background-repeat: no-repeat;
-	}
-
 	.image {
 		display: inline-block;
 		position: relative;
@@ -1759,9 +1682,10 @@ input, select, textarea {
 		outline: 0;
 		cursor: pointer;
 		border-radius: 8px;
+		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #648fff;
+		background-color: #43B3E0;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1772,7 +1696,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #785ef0;
+			background-color: #43bff0;
 			color: #fff !important;
 		}
 
@@ -1781,7 +1705,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #648fff;
+			background-color: #3BA8D3;
 			top: 1px;
 		}
 
@@ -1790,7 +1714,6 @@ input, select, textarea {
 		input[type="reset"].large,
 		button.large,
 		.button.large {
-			font-size: 1.5em;
 			letter-spacing: -0.025em;
 		}
 
@@ -1890,6 +1813,7 @@ input, select, textarea {
 					text-align: center;
 					outline: 0;
 					overflow: hidden;
+					text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
 					width: 48px;
 				}
 
@@ -1989,7 +1913,6 @@ input, select, textarea {
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
-		border-radius: 15px;
 	}
 
 		.box.style1 {
@@ -2000,9 +1923,8 @@ input, select, textarea {
 				margin-bottom: 0.5em;
 			}
 
-		.box.style2 h4 {
+		.box.style2 h3 {
 			margin-bottom: 0.25em;
-			color: #102545;
 		}
 
 		.box.style2 .image {
@@ -2064,25 +1986,30 @@ input, select, textarea {
 
 	.wrapper {
 		background-image: url("images/bg.png");
-		padding: 2em 0 2em 0;
+		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		padding: 8em 0 8em 0;
 		text-align: center;
 	}
 
 		.wrapper.style1 {
 			background-image: none;
+			background-color: #fff;
 		}
 
 		.wrapper.style2 {
-			
+			background-color: #fafafa;
+			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style3 {
-			
+			background-color: #f4f4f4;
+			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style4 {
+			background-color: #303030;
 			color: #999;
-			
+			text-shadow: -1px -1px 0px #181818;
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
@@ -2367,7 +2294,6 @@ input, select, textarea {
 			button,
 			.button {
 				text-align: center;
-				font-size: 1.2em;
 				width: 100%;
 				padding: 1em 0 1em 0;
 			}
@@ -2377,7 +2303,6 @@ input, select, textarea {
 				input[type="reset"].large,
 				button.large,
 				.button.large {
-					font-size: 1.2em;
 					letter-spacing: 0;
 				}
 
