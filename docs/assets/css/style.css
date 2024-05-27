@@ -172,6 +172,17 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+		/* Hide scrollbar for Webkit browsers */
+		body.is-preload::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for all elements */
+		* {
+			-ms-overflow-style: none;  /* Internet Explorer 10+ */
+			scrollbar-width: none;     /* Firefox */
+		}
+
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.2;
