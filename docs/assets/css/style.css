@@ -62,12 +62,16 @@ table {
 
 .text-container {
     display: flex;
-    border: 1px solid #ccc;
     max-width: calc(100% - 10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 15px;
 	background-color: #ffffff40;
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
 	margin: 2em;
+	background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 
 .table-section {
@@ -82,7 +86,12 @@ table {
     max-width: calc(100% - 10px);
 	border-radius: 15px;
 	margin: 0 auto;
-	border: 1px solid #ccc;
+	background: #ffffff40;
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+	background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 
 .icon-cell {
@@ -93,6 +102,7 @@ table {
     flex-shrink: 0;
 	border-radius: 15px;
 	width: 150px;
+	box-shadow: inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
 }
 
 .icon-cell img {
@@ -175,8 +185,8 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #43B3E0;
-		text-decoration: underline;
+		color: #08C1FB;
+		text-decoration: none;
 	}
 
 		a:hover {
@@ -1758,10 +1768,10 @@ input, select, textarea {
 		border: 0;
 		outline: 0;
 		cursor: pointer;
-		border-radius: 8px;
+		border-radius: 15px;
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #648fff;
+		background-color: #08C1FB;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1985,11 +1995,11 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
 		border-radius: 15px;
+		background-color: #ffffff40;
 	}
 
 		.box.style1 {
@@ -2002,7 +2012,6 @@ input, select, textarea {
 
 		.box.style2 h4 {
 			margin-bottom: 0.25em;
-			color: #102545;
 		}
 
 		.box.style2 .image {
